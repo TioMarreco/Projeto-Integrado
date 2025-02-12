@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Parelhas</title>
+</head>
+<body>
+    <h2>Digite a Senha</h2>
+
+    <form id="loginform">
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="button" onclick="checkPassword()">Entrar</button>
+     
+    </form>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctpassword = "1204";
+
+            if (password === correctpassword) {
+                window.location.href = "login.html";
+            }else{
+                alert("Senha Incorreta! Tente Novamente")
+            }
+        }
+    </script>
+    
+</body>
+</html>
