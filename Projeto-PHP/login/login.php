@@ -27,11 +27,11 @@ $stmt->execute();
 if ($stmt->rowCount() > 0) {
     if ($nome == 'ADM' && $senha == '120406') {
         // Redireciona para escolha-ADM.html
-        header("Location: escolha/escolha-ADM.html");
+        header("Location: ../escolha/escolha-ADM.html");
         exit();
     } else {
         // Redireciona para escolha.html
-        header("Location: escolha/escolha.html");
+        header("Location: ../escolha/escolha.html");
         exit();
     }
 } else {
